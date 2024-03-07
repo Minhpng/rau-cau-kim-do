@@ -1,8 +1,9 @@
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import localFont from "next/font/local"
 
-import { Lalezar, Montserrat, Island_Moments } from "next/font/google"
+import { Lalezar, Montserrat, Island_Moments, Pacifico } from "next/font/google"
 
 const lalezar = Lalezar({ weight: "400", subsets: ["vietnamese"] })
 const montserrat = Montserrat({
@@ -12,6 +13,15 @@ const montserrat = Montserrat({
 const islandMoment = Island_Moments({
 	weight: ["400"],
 	subsets: ["vietnamese"],
+})
+const pacifico = Pacifico({
+	weight: ["400"],
+	subsets: ["vietnamese"],
+})
+
+const hlNheNhang = localFont({
+	src: "../HL_Nhenhang.ttf",
+	display: "swap",
 })
 
 function Page() {
@@ -120,7 +130,7 @@ function Page() {
 			</section>
 			<main>
 				<section className="section bg-[#566332]">
-					<div className="container">
+					<div className="container p-0">
 						<h1 className="menu-heading pb-10 text-center text-6xl text-white font-black pt-10">
 							MENU
 						</h1>
@@ -134,15 +144,62 @@ function Page() {
 								objectFit="cover"
 							/>
 						</div>
-						<div className="pt-20">
-							<Image
-								src="/images/thank-you.svg"
-								alt="rau cau kim do menu"
-								className="w-full"
-								objectFit="cover"
-								width={1000}
-								height={500}
-							/>
+						<div className="pt-20 text-xl max-w-[700px] mx-auto text-center text-white">
+							<p>
+								Đừng quên giữ lại{" "}
+								<span className="relative inline-block w-[140px] h-[32px]">
+									<span
+										className={cn(
+											hlNheNhang.className,
+											"text-[#E73961] font-bold text-2xl voucher absolute left-0 right-0 top-[13px]"
+										)}
+									>
+										K-VOUCHER
+									</span>
+									<span
+										className={cn(
+											hlNheNhang.className,
+											"text-[#E73961] font-bold text-2xl voucher-pink absolute left-0 right-0 top-[13px]"
+										)}
+									>
+										K-VOUCHER
+									</span>
+								</span>
+								, để được giảm giá KHỦNG lần sau nhé!!!
+							</p>
+							<p>
+								(Mỗi hóa đơn khi thanh toán sẽ nhận được 1{" "}
+								<span className="relative inline-block w-[140px] h-[32px]">
+									<span
+										className={cn(
+											hlNheNhang.className,
+											"text-[#E73961] font-bold text-2xl voucher absolute left-0 right-0 top-[13px]"
+										)}
+									>
+										K-VOUCHER
+									</span>
+									<span
+										className={cn(
+											hlNheNhang.className,
+											"text-[#E73961] font-bold text-2xl voucher-pink absolute left-0 right-0 top-[13px]"
+										)}
+									>
+										K-VOUCHER
+									</span>
+								</span>
+								)
+							</p>
+							<p className={cn(pacifico.className, "text-xl mt-10")}>
+								***Cảm ơn quý khách đã lựa chọn Kim Đô***
+							</p>
+							<div className="flex items-center justify-center mt-4">
+								<Image
+									src={"/images/thank-you.png"}
+									alt="rau cau kim do cam on"
+									width={80}
+									height={120}
+								/>
+							</div>
 						</div>
 					</div>
 				</section>

@@ -88,3 +88,10 @@
 	background: #9e2101;
 	background-image: linear-gradient(135deg, #9e2101, #870102);
 }
+
+.voucher {
+	-webkit-text-stroke: 4px #fff;
+}
+.voucher-pink {
+	-webkit-text-stroke: 1px #e73961;
+}
