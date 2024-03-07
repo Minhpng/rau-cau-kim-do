@@ -11,6 +11,13 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
 	title: "Rau câu gia truyền Kim Đô",
 	description: "Rau câu gia truyền Kim Đô",
+	icons: [
+		{
+			rel: "icon",
+			type: "image/x-icon",
+			url: "/favicon.ico",
+		},
+	],
 }
 
 export default function RootLayout({
@@ -20,9 +27,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<Head>
+			{/* <Head>
 				<link rel="icon" href="/favicon.ico" sizes="any" />
-			</Head>
+			</Head> */}
 			<body className={montserrat.className}>{children}</body>
 		</html>
 	)
