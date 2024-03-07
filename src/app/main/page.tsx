@@ -167,7 +167,6 @@ function Page() {
 								className="w-full"
 								width={1000}
 								height={2000}
-								objectFit="cover"
 							/>
 						</div>
 						<div className="pt-20 text-2xl max-w-[900px] mx-auto text-center text-white px-2">
