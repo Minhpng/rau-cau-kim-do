@@ -31,7 +31,7 @@ function Page() {
 			<section className="section hero overflow-hidden">
 				<header className="relative z-50">
 					<div className="section">
-						<div className="container flex flex-row items-center justify-between gap-2">
+						<div className="container flex flex-col sm:flex-row items-center justify-between gap-2">
 							<div className="logo w-20 relative h-16">
 								<Image
 									src="./images/logo-kimdo.svg"
@@ -63,7 +63,7 @@ function Page() {
 								href="tel:0964536819"
 								className={cn(
 									buttonVariants({ size: "lg" }),
-									"text-gray-800 font-medium text-xl bg-yellow-300 hover:bg-yellow-400"
+									"text-gray-800 font-medium text-xl bg-yellow-300 hover:bg-yellow-400 px-2"
 								)}
 							>
 								<Phone strokeWidth={2.5} size={20} className="mr-2" />
@@ -75,7 +75,7 @@ function Page() {
 				<div className="container pt-10">
 					<div className="grid lg:grid-cols-[600px_1fr] gap-4 w-full">
 						<div className="flex flex-col gap-2 items-center md:items-start justify-center flex-grow pb-10 relative">
-							<div className="absolute w-[350px] bottom-0 hidden sm:block sm:-right-72 z-10">
+							<div className="absolute w-[350px] -bottom-96 -right-32 sm:bottom-0 sm:-right-72 z-10">
 								<Image
 									src={"/images/ruybang-1.svg"}
 									alt="ruybang"
@@ -83,7 +83,7 @@ function Page() {
 									height={140}
 								/>
 							</div>
-							<div className="absolute w-[350px] -top-40 sm:block -right-80 z-10">
+							<div className="absolute w-[350px] -top-40 -right-80 z-10">
 								<Image
 									src={"/images/ruybang-2.svg"}
 									alt="ruybang"
@@ -91,7 +91,7 @@ function Page() {
 									height={140}
 								/>
 							</div>
-							<div className="absolute w-[350px] -top-72 sm:block -left-20 z-10">
+							<div className="absolute w-[350px] -top-72 -left-20 z-10">
 								<Image
 									src={"/images/ruybang-3.svg"}
 									alt="ruybang"
@@ -138,17 +138,17 @@ function Page() {
 									"hero-heading text-white text-4xl text-center md:text-left"
 								)}
 							>
-								Áp dụng từ <span className="inline-block"> 08/03 - 18/03</span>
+								Áp dụng từ{" "}
+								<span className="inline-block ml-1"> 08/03 - 18/03</span>
 							</h4>
 						</div>
 						<div className="w-full relative h-[700px] md:h-96">
 							<Image
 								src="/images/hero-image.png"
 								alt="kim do rau cau"
-								className="-ml-96 md:-ml-36 max-w-none -mt-40 absolute top-0 left-0"
+								className="-ml-72 md:-ml-36 max-w-[1000px] sm:max-w-none -mt-28 sm:-mt-40 absolute top-0 left-0"
 								width={1200}
 								height={500}
-								objectFit="contain"
 							/>
 						</div>
 					</div>
@@ -170,7 +170,7 @@ function Page() {
 								objectFit="cover"
 							/>
 						</div>
-						<div className="pt-20 text-xl max-w-[700px] mx-auto text-center text-white">
+						<div className="pt-20 text-2xl max-w-[900px] mx-auto text-center text-white px-2">
 							<p>
 								Đừng quên giữ lại{" "}
 								<span className="relative inline-block w-[140px] h-[32px]">
