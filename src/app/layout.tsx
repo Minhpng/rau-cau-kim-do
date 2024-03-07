@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import "./globals.css"
-import Head from "next/head"
+import LightIcon from "@/app/favicon.ico"
 
 const montserrat = Montserrat({
 	weight: ["900", "400", "500"],
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 			{
 				rel: "icon",
 				type: "image/x-icon",
-				url: "/favicon.ico",
+				url: LightIcon.src,
 			},
 		],
 	},
