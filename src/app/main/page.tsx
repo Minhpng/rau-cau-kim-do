@@ -74,7 +74,31 @@ function Page() {
 				</header>
 				<div className="container pt-10">
 					<div className="grid lg:grid-cols-[600px_1fr] gap-4 w-full">
-						<div className="flex flex-col gap-2 items-center md:items-start justify-center flex-grow pb-10">
+						<div className="flex flex-col gap-2 items-center md:items-start justify-center flex-grow pb-10 relative">
+							<div className="absolute w-[350px] bottom-0 hidden sm:block sm:-right-72 z-10">
+								<Image
+									src={"/images/ruybang-1.svg"}
+									alt="ruybang"
+									width={350}
+									height={140}
+								/>
+							</div>
+							<div className="absolute w-[350px] -top-40 sm:block -right-80 z-10">
+								<Image
+									src={"/images/ruybang-2.svg"}
+									alt="ruybang"
+									width={150}
+									height={140}
+								/>
+							</div>
+							<div className="absolute w-[350px] -top-72 sm:block -left-20 z-10">
+								<Image
+									src={"/images/ruybang-3.svg"}
+									alt="ruybang"
+									width={350}
+									height={140}
+								/>
+							</div>
 							<h3
 								className={cn(
 									"sub-brand text-white text-6xl sm:text-8xl text-center md:text-left",
