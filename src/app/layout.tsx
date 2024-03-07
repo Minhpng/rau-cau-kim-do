@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import "./globals.css"
-import LightIcon from "@/app/favicon.ico"
 
 const montserrat = Montserrat({
 	weight: ["900", "400", "500"],
@@ -11,15 +10,15 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
 	title: "Rau câu gia truyền Kim Đô",
 	description: "Rau câu gia truyền Kim Đô",
-	icons: {
-		icon: [
-			{
-				rel: "icon",
-				type: "image/x-icon",
-				url: LightIcon.src,
-			},
-		],
-	},
+	// icons: {
+	// 	icon: [
+	// 		{
+	// 			rel: "icon",
+	// 			type: "image/x-icon",
+	// 			url: LightIcon.src,
+	// 		},
+	// 	],
+	// },
 }
 
 export default function RootLayout({
