@@ -4,6 +4,7 @@ import Image from "next/image"
 import localFont from "next/font/local"
 
 import { Lalezar, Montserrat, Island_Moments, Pacifico } from "next/font/google"
+import { Phone } from "lucide-react"
 
 const lalezar = Lalezar({ weight: "400", subsets: ["vietnamese"] })
 const montserrat = Montserrat({
@@ -28,7 +29,7 @@ function Page() {
 	return (
 		<>
 			<section className="section hero overflow-hidden">
-				<header>
+				<header className="relative z-50">
 					<div className="section">
 						<div className="container flex flex-row items-center justify-between gap-2">
 							<div className="logo w-20 relative h-16">
@@ -61,10 +62,11 @@ function Page() {
 							<a
 								href="tel:0964536819"
 								className={cn(
-									buttonVariants(),
-									"text-gray-800 font-medium text-lg bg-yellow-300 hover:bg-yellow-400"
+									buttonVariants({ size: "lg" }),
+									"text-gray-800 font-medium text-xl bg-yellow-300 hover:bg-yellow-400"
 								)}
 							>
+								<Phone strokeWidth={2.5} size={20} className="mr-2" />
 								Hotline: 096.453.6819
 							</a>
 						</div>
@@ -75,7 +77,7 @@ function Page() {
 						<div className="flex flex-col gap-2 items-center md:items-start justify-center flex-grow pb-10">
 							<h3
 								className={cn(
-									"text-white text-6xl sm:text-8xl text-center md:text-left",
+									"sub-brand text-white text-6xl sm:text-8xl text-center md:text-left",
 									islandMoment.className
 								)}
 							>

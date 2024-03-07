@@ -89,6 +89,10 @@
 	background-image: linear-gradient(135deg, #9e2101, #870102);
 }
 
+.sub-brand {
+	-webkit-text-stroke: 2px #fff;
+}
+
 .voucher {
 	-webkit-text-stroke: 4px #fff;
 }
