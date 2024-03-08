@@ -11,15 +11,15 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
 	title: "Rau câu gia truyền Kim Đô",
 	description: "Rau câu gia truyền Kim Đô",
-	// icons: {
-	// 	icon: [
-	// 		{
-	// 			rel: "icon",
-	// 			type: "image/x-icon",
-	// 			url: LightIcon.src,
-	// 		},
-	// 	],
-	// },
+	icons: {
+		icon: [
+			{
+				rel: "icon",
+				type: "image/x-icon",
+				url: "/images/favicon.ico",
+			},
+		],
+	},
 }
 
 export default function RootLayout({
