@@ -146,7 +146,7 @@ function Page() {
 							<Image
 								src="/images/hero-image.png"
 								alt="kim do rau cau"
-								className="-ml-32 sm:-ml-80 md:-ml-72 lg:-ml-36 max-w-[700px] sm:max-w-none -mt-20 sm:-mt-40 absolute top-0 left-0"
+								className="-ml-56 sm:-ml-80 md:-ml-72 lg:-ml-36 max-w-[700px] sm:max-w-none -mt-20 sm:-mt-40 absolute top-0 left-0"
 								width={1200}
 								height={500}
 							/>
