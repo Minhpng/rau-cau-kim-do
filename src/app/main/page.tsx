@@ -75,7 +75,7 @@ function Page() {
 				<div className="container pt-10">
 					<div className="grid lg:grid-cols-[600px_1fr] gap-4 w-full">
 						<div className="flex flex-col gap-2 items-center md:items-start justify-center flex-grow pb-10 relative">
-							<div className="absolute w-[350px] -bottom-96 -right-32 sm:bottom-0 sm:-right-72 z-10">
+							<div className="absolute w-[350px] -bottom-[600px] -right-32 sm:bottom-0 sm:-right-72 z-10">
 								<Image
 									src={"/images/ruybang-1.svg"}
 									alt="ruybang"
@@ -142,11 +142,11 @@ function Page() {
 								<span className="inline-block ml-1"> 08/03 - 18/03</span>
 							</h4>
 						</div>
-						<div className="w-full relative h-[700px] md:h-96">
+						<div className="w-full relative h-[700px] md:h-[500px]">
 							<Image
 								src="/images/hero-image.png"
 								alt="kim do rau cau"
-								className="-ml-72 md:-ml-36 max-w-[1000px] sm:max-w-none -mt-28 sm:-mt-40 absolute top-0 left-0"
+								className="-ml-32 sm:-ml-80 md:-ml-36 max-w-[700px] sm:max-w-none -mt-20 sm:-mt-40 absolute top-0 left-0"
 								width={1200}
 								height={500}
 							/>
@@ -172,7 +172,7 @@ function Page() {
 						<div className="pt-20 text-2xl max-w-[900px] mx-auto text-center text-white px-2">
 							<p>
 								Đừng quên giữ lại{" "}
-								<span className="relative inline-block w-[140px] h-[32px]">
+								<span className="relative inline-block w-[150px] h-[32px]">
 									<span
 										className={cn(
 											hlNheNhang.className,
@@ -194,11 +194,11 @@ function Page() {
 							</p>
 							<p>
 								(Mỗi hóa đơn khi thanh toán sẽ nhận được 1{" "}
-								<span className="relative inline-block w-[140px] h-[32px]">
+								<span className="relative inline-block w-[150px] h-[32px]">
 									<span
 										className={cn(
 											hlNheNhang.className,
-											"text-[#E73961] font-bold text-2xl voucher absolute left-0 right-0 top-[13px]"
+											"text-[#E73961] font-bold text-2xl voucher absolute left-0 right-0 top-[13px] inline-block"
 										)}
 									>
 										K-VOUCHER
@@ -206,7 +206,7 @@ function Page() {
 									<span
 										className={cn(
 											hlNheNhang.className,
-											"text-[#E73961] font-bold text-2xl voucher-pink absolute left-0 right-0 top-[13px]"
+											"text-[#E73961] font-bold text-2xl voucher-pink absolute left-0 right-0 top-[13px] inline-block"
 										)}
 									>
 										K-VOUCHER
