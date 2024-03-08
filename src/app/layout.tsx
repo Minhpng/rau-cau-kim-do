@@ -9,8 +9,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-	title: "Rau câu gia truyền Kim Đô",
-	description: "Rau câu gia truyền Kim Đô",
+	title: "Rau câu gia truyền và các món ăn vặt | Kim Đô",
+	description:
+		"Rau câu gia truyền Kim Đô ngon mát, thanh khiết và ấn tượng, mang hương vị đặc trưng miền Tây. Ngoài Rau Câu thì Trứng nướng, Bánh Tráng nướng, Hồ Lô nướng,… cũng là các món đặc biệt ấn tượng của quán.",
 	icons: {
 		icon: [
 			{
