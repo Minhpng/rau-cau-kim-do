@@ -169,7 +169,7 @@ function Page() {
 								height={2000}
 							/>
 						</div>
-						<div className="pt-20 text-2xl max-w-[900px] mx-auto text-center text-white px-2">
+						<div className="pt-20 text-2xl max-w-[900px] mx-auto text-center font-medium text-white px-2">
 							<p>
 								Đừng quên giữ lại{" "}
 								<span className="relative inline-block w-[150px] h-[32px]">
