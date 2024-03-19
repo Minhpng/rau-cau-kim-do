@@ -127,7 +127,7 @@ function Page() {
 								Xem menu
 							</a>
 						</div>
-						<div className="w-full relative h-[300px] sm:h-[700px] md:h-[800px] lg:h-[700px]">
+						<div className="w-full relative h-[300px] sm:h-[700px] md:h-[800px] lg:h-[600px]">
 							<Image
 								src="/images/hero-image-3.png"
 								alt="kim do rau cau"
