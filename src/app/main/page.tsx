@@ -67,7 +67,7 @@ function Page() {
 								</a>
 								<a
 									href="https://maps.app.goo.gl/T48XhzmcWpThHoV86"
-									className="text-white text-2xl font-medium flex gap-2 justify-start items-start hover:opacity-90"
+									className="text-white text-xl sm:text-2xl font-medium flex gap-2 justify-start items-start hover:opacity-90"
 									target="_blank"
 								>
 									<Image
@@ -119,7 +119,7 @@ function Page() {
 									buttonVariants({
 										size: "lg",
 										className:
-											"bg-yellow-300 hover:bg-yellow-400 text-gray-800 text-3xl px-10 py-10 rounded-2xl",
+											"bg-yellow-300 hover:bg-yellow-400 text-gray-800 text-2xl px-8 py-8 rounded-2xl",
 									}),
 									"cursor-pointer"
 								)}
@@ -154,7 +154,7 @@ function Page() {
 								height={2000}
 							/>
 						</div>
-						<div className="pt-20 text-2xl max-w-[900px] mx-auto text-center font-medium text-white px-2">
+						<div className="pt-20 text-xl sm:text-2xl max-w-[900px] mx-auto text-center font-medium text-white px-2">
 							<p>
 								Đừng quên giữ lại{" "}
 								<span className="relative inline-block w-[150px] h-[32px]">
