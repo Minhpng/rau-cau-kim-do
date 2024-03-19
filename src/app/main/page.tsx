@@ -4,13 +4,8 @@ import Image from "next/image"
 import localFont from "next/font/local"
 
 import { Lalezar, Montserrat, Island_Moments, Pacifico } from "next/font/google"
-import { Phone } from "lucide-react"
+import { ArrowRight, MapPin, Phone } from "lucide-react"
 
-const lalezar = Lalezar({ weight: "400", subsets: ["vietnamese"] })
-const montserrat = Montserrat({
-	weight: ["900", "400"],
-	subsets: ["vietnamese"],
-})
 const islandMoment = Island_Moments({
 	weight: ["400"],
 	subsets: ["vietnamese"],
@@ -59,46 +54,45 @@ function Page() {
 									</li>
 								</ul>
 							</nav> */}
-							<a
-								href="tel:0964536819"
-								className={cn(
-									buttonVariants({ size: "lg" }),
-									"text-gray-800 font-medium text-xl bg-yellow-300 hover:bg-yellow-400 px-2"
-								)}
-							>
-								<Phone strokeWidth={2.5} size={20} className="mr-2" />
-								Hotline: 096.453.6819
-							</a>
+							<div className="flex flex-col gap-2 items-center md:items-start justify-start">
+								<a
+									href="tel:0964536819"
+									className={cn(
+										buttonVariants({ size: "lg" }),
+										"text-gray-800 font-medium text-xl bg-yellow-300 hover:bg-yellow-400 px-2"
+									)}
+								>
+									<Phone strokeWidth={2.5} size={20} className="mr-2" />
+									Hotline: 096.453.6819
+								</a>
+								<a
+									href="https://maps.app.goo.gl/T48XhzmcWpThHoV86"
+									className="text-white text-2xl font-medium flex gap-2 justify-start items-start hover:opacity-90"
+									target="_blank"
+								>
+									<Image
+										src="/images/flat-color-icons_home.svg"
+										alt=""
+										objectFit="contain"
+										width={30}
+										height={30}
+										className="relative -top-[3px]"
+									/>
+									<div className="flex flex-col items-center justify-start md:items-start">
+										<span>1446 Phạm Thế Hiển, P5, Q8</span>
+										<span className="text-base text-white/65">
+											Xem đường đi
+											<ArrowRight size={10} className="inline-block ml-1" />
+										</span>
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</header>
 				<div className="container pt-10">
 					<div className="grid lg:grid-cols-[600px_1fr] gap-4 w-full">
 						<div className="flex flex-col gap-2 items-center md:items-start justify-center flex-grow pb-10 relative">
-							<div className="absolute w-[350px] -bottom-[600px] -right-32 sm:bottom-0 sm:-right-72 z-10">
-								<Image
-									src={"/images/ruybang-1.svg"}
-									alt="ruybang"
-									width={350}
-									height={140}
-								/>
-							</div>
-							<div className="absolute w-[350px] -top-40 -right-80 z-10">
-								<Image
-									src={"/images/ruybang-2.svg"}
-									alt="ruybang"
-									width={150}
-									height={140}
-								/>
-							</div>
-							<div className="absolute w-[350px] -top-72 -left-20 z-10">
-								<Image
-									src={"/images/ruybang-3.svg"}
-									alt="ruybang"
-									width={350}
-									height={140}
-								/>
-							</div>
 							<h3
 								className={cn(
 									"sub-brand text-white text-6xl sm:text-8xl text-center md:text-left",
@@ -116,37 +110,28 @@ function Page() {
 									height={100}
 								/>
 							</div>
-							<h1
+							<p className="text-3xl text-white font-bold mb-8">
+								Nhấc điện thoại, Gọi món ngay!!!
+							</p>
+							<a
+								href="#menu"
 								className={cn(
-									lalezar.className,
-									"hero-heading text-white text-6xl text-center md:text-left"
+									buttonVariants({
+										size: "lg",
+										className:
+											"bg-yellow-300 hover:bg-yellow-400 text-gray-800 text-3xl px-10 py-10 rounded-2xl",
+									}),
+									"cursor-pointer"
 								)}
 							>
-								Tưng bừng khai trương
-							</h1>
-							<div className="max-w-[500px] w-full h-60 relative">
-								<Image
-									src="/images/discount-20.svg"
-									alt="brand kim do"
-									className="w-full h-full"
-									fill
-								/>
-							</div>
-							<h4
-								className={cn(
-									lalezar.className,
-									"hero-heading text-white text-4xl text-center md:text-left"
-								)}
-							>
-								Áp dụng từ{" "}
-								<span className="inline-block ml-1"> 08/03 - 18/03</span>
-							</h4>
+								Xem menu
+							</a>
 						</div>
-						<div className="w-full relative h-[700px] md:h-[500px]">
+						<div className="w-full relative h-[300px] sm:h-[700px] md:h-[800px] lg:h-[700px]">
 							<Image
-								src="/images/hero-image.png"
+								src="/images/hero-image-3.png"
 								alt="kim do rau cau"
-								className="-ml-56 sm:-ml-80 md:-ml-72 lg:-ml-36 max-w-[700px] sm:max-w-none -mt-20 sm:-mt-40 absolute top-0 left-0"
+								className="ml-0 lg:ml-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl"
 								width={1200}
 								height={500}
 							/>
@@ -156,13 +141,13 @@ function Page() {
 			</section>
 			<main>
 				<section className="section bg-[#566332]">
-					<div className="container p-0">
+					<div id="menu" className="container p-0">
 						<h1 className="menu-heading pb-10 text-center text-6xl text-white font-black pt-10">
 							MENU
 						</h1>
 						<div className="w-full">
 							<Image
-								src="/images/menu-1.webp"
+								src="/images/menu-1.png"
 								alt="rau cau kim do menu"
 								className="w-full"
 								width={1000}
