@@ -8,7 +8,7 @@ function HotlineFloatIcon() {
 			<a href={ZALO_LINK} target="_blank">
 				<div className="call-hotline animation-rotate z-50 inline-block w-[40px] md:w-[65px]">
 					<Image
-						title="Call Hotline"
+						title="Đặt món qua zalo"
 						src="/images/zalo-icon.svg"
 						alt="phone-icon"
 						width="65"
