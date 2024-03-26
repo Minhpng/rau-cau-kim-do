@@ -16,6 +16,7 @@ function HotlineFloatIcon() {
 						alt="phone-icon"
 						width="65"
 						height="65"
+						priority
 					/>
 				</div>
 			</div>
