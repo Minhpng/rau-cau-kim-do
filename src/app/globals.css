@@ -88,20 +88,17 @@
 }
 
 .hero {
-	background: rgb(184, 0, 0);
-	background-image: url("/images/patern.svg"), url("/images/Texture.png"),
-		linear-gradient(
-			50deg,
-			rgba(184, 0, 0, 1) 0%,
-			rgba(136, 0, 0, 1) 100%
-				/* rgba(255, 255, 255, 1) 60%,
-			rgba(255, 255, 255, 1) 70%,
-			rgba(136, 0, 0, 1) 70%,
-			rgba(184, 0, 0, 1) 100% */
-		);
-	background-size: contain, cover, auto;
-	background-blend-mode: normal, multiply, normal;
-	background-repeat: repeat, no-repeat, repeat;
+	background: hsl(0, 100%, 38%);
+	background-image: url("/images/texture-3.webp"), url("/images/texture-2.webp"),
+		url("/images/patern-2.webp"),
+		linear-gradient(50deg, hsl(0, 100%, 38%), hsl(0, 100%, 38%));
+	background-size: cover, cover, 150%, auto;
+	background-blend-mode: multiply, multiply, screen, normal;
+	background-repeat: no-repeat, no-repeat, repeat, repeat;
+
+	@media screen and (min-width: 768px) {
+		background-size: cover, cover, 70%, auto;
+	}
 }
 
 .sub-brand {
@@ -113,4 +110,8 @@
 }
 .voucher-pink {
 	-webkit-text-stroke: 1px #e73961;
+}
+
+.shape {
+	@apply absolute -z-10;
 }
