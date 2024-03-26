@@ -149,7 +149,7 @@ function Page() {
 							</p>
 							<div className="flex items-center justify-center mt-4">
 								<Image
-									src={"/images/thank-you.png"}
+									src={"/images/thank-you.svg"}
 									alt="rau cau kim do cam on"
 									width={80}
 									height={120}
