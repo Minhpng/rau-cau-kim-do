@@ -23,7 +23,7 @@ const hlNheNhang = localFont({
 function Page() {
 	return (
 		<>
-			<WelcomePopup>Hello there</WelcomePopup>
+			<WelcomePopup />
 			<HeroSection />
 			<HotlineFloatIcon />
 			<main>

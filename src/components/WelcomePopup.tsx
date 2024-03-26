@@ -1,11 +1,11 @@
 "use client"
-import { PropsWithChildren, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { Dialog, DialogClose, DialogContent } from "./ui/dialog"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./ui/button"
 
-function WelcomePopup({ children }: PropsWithChildren) {
+function WelcomePopup() {
 	const [isOpen, setIsOpen] = useState(true)
 	const [isClient, setIsClient] = useState(false)
 
