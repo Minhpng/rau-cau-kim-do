@@ -60,7 +60,7 @@ function Page() {
 							</div>
 							<h1 className="text-5xl md:text-6xl text-white font-medium text-center mb-10">
 								Sự ra đời của{" "}
-								<span className="relative w-[170px] h-[60px] inline-block">
+								<span className="relative w-[190px] h-[60px] inline-block md:-ml-5">
 									<span
 										className={cn(
 											hlNheNhang.className,
