@@ -4,7 +4,7 @@ import "./globals.css"
 import Head from "next/head"
 
 const montserrat = Montserrat({
-	weight: ["900", "400", "500"],
+	weight: ["900", "400", "500", "600"],
 	subsets: ["vietnamese"],
 })
 

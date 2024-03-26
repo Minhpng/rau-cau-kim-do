@@ -1,3 +1,4 @@
+"use client"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import localFont from "next/font/local"
@@ -6,6 +7,8 @@ import { Pacifico } from "next/font/google"
 import HeroSection from "./HeroSection"
 import Markdown from "react-markdown"
 import { ABOUT_KIMDO } from "./about-kimdo"
+import WelcomePopup from "@/components/WelcomePopup"
+import HotlineFloatIcon from "@/components/HotlineFloatIcon"
 
 const pacifico = Pacifico({
 	weight: ["400"],
@@ -20,14 +23,16 @@ const hlNheNhang = localFont({
 function Page() {
 	return (
 		<>
+			<WelcomePopup>Hello there</WelcomePopup>
 			<HeroSection />
+			<HotlineFloatIcon />
 			<main>
 				<section className="section bg-[#566332] overflow-clip">
 					<div id="menu" className="container p-0">
-						<h1 className="menu-heading pb-10 text-center text-6xl text-white font-black pt-10">
+						<h1 className="menu-heading pb-8 text-center text-6xl text-white font-black pt-10">
 							MENU
 						</h1>
-						<div className="w-full mb-20">
+						<div className="w-full max-w-[900px] mx-auto mb-16">
 							<Image
 								src="/images/menu-1.png"
 								alt="rau cau kim do menu"
@@ -53,7 +58,7 @@ function Page() {
 									height={2000}
 								/>
 							</div>
-							<h1 className="text-5xl md:text-6xl text-white font-medium text-center mb-20">
+							<h1 className="text-5xl md:text-6xl text-white font-medium text-center mb-10">
 								Sự ra đời của{" "}
 								<span className="relative w-[170px] h-[60px] inline-block">
 									<span
@@ -78,7 +83,15 @@ function Page() {
 								<Markdown>{ABOUT_KIMDO}</Markdown>
 							</div>
 						</div>
-						<div className="pt-20 text-xl sm:text-2xl max-w-[900px] mx-auto text-center font-medium text-white px-2 relative isolate">
+						<p
+							className={cn(
+								pacifico.className,
+								"text-xl mt-10 text-center text-white"
+							)}
+						>
+							************
+						</p>
+						<div className="pt-8 text-xl sm:text-2xl max-w-[900px] mx-auto text-center font-medium text-white px-2 relative isolate">
 							<div className="shape w-[300px] -bottom-[100px] -left-[150px]">
 								<Image
 									src="/images/rau-cau-mask.png"

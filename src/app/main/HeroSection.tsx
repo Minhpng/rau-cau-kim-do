@@ -1,4 +1,10 @@
 import { buttonVariants } from "@/components/ui/button"
+import {
+	ADDRESS,
+	ADDRESS_MAP_LINK,
+	HOTLINE,
+	HOTLINE_FORMAT,
+} from "@/constants/constants"
 import { cn } from "@/lib/utils"
 import { ArrowRight, Phone } from "lucide-react"
 import { Island_Moments } from "next/font/google"
@@ -44,17 +50,17 @@ function HeroSection() {
                 </nav> */}
 						<div className="flex flex-col gap-2 items-center md:items-start justify-start">
 							<a
-								href="tel:0964536819"
+								href={`tel:${HOTLINE}`}
 								className={cn(
 									buttonVariants({ size: "lg" }),
 									"text-gray-800 font-medium text-xl bg-yellow-300 hover:bg-yellow-400 px-2"
 								)}
 							>
 								<Phone strokeWidth={2.5} size={20} className="mr-2" />
-								Hotline: 096.453.6819
+								Hotline: {HOTLINE_FORMAT}
 							</a>
 							<a
-								href="https://maps.app.goo.gl/T48XhzmcWpThHoV86"
+								href={ADDRESS_MAP_LINK}
 								className="text-white text-xl sm:text-2xl font-medium flex gap-2 justify-start items-start hover:opacity-90"
 								target="_blank"
 							>
@@ -67,7 +73,7 @@ function HeroSection() {
 									className="relative -top-[3px]"
 								/>
 								<div className="flex flex-col items-center justify-start md:items-start">
-									<span>1446 Phạm Thế Hiển, P5, Q8</span>
+									<span>{ADDRESS}</span>
 									<span className="text-base text-white/65">
 										Xem đường đi
 										<ArrowRight size={10} className="inline-block ml-1" />
@@ -107,7 +113,7 @@ function HeroSection() {
 								buttonVariants({
 									size: "lg",
 									className:
-										"bg-yellow-300 hover:bg-yellow-400 text-gray-800 text-2xl px-8 py-8 rounded-2xl font-medium",
+										"bg-yellow-300 hover:bg-yellow-400 text-gray-800 text-2xl px-8 py-8 rounded-2xl font-semibold",
 								}),
 								"cursor-pointer"
 							)}
