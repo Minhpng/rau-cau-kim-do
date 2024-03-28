@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react"
 
 // Import Swiper styles
 import "swiper/css"
+import "swiper/css/pagination"
+
 import { Autoplay, Pagination } from "swiper/modules"
 
 const bannerList = [
@@ -27,9 +29,11 @@ function BannerSection({}) {
 						slidesPerView={2}
 						breakpoints={{
 							768: { slidesPerView: 2 },
-							320: { slidesPerView: 1 },
+							0: { slidesPerView: 1 },
 						}}
-						pagination={{ clickable: true }}
+						pagination={{
+							clickable: true,
+						}}
 						autoplay={{ delay: 5000 }}
 						onSlideChange={() => console.log("slide change")}
 						onSwiper={(swiper) => console.log(swiper)}

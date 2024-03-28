@@ -120,6 +120,12 @@
 	animation: rotate-shake 1s infinite ease-in-out;
 }
 
+.swiper {
+	--swiper-pagination-bottom: 0px;
+	--swiper-pagination-bullet-inactive-color: #fff;
+	--swiper-pagination-bullet-inactive-opacity: 1;
+}
+
 @keyframes rotate-shake {
 	0% {
 		-webkit-transform: rotate(0) scale(1) skew(1deg);
