@@ -9,6 +9,7 @@ import Markdown from "react-markdown"
 import { ABOUT_KIMDO } from "./about-kimdo"
 import WelcomePopup from "@/components/WelcomePopup"
 import HotlineFloatIcon from "@/components/HotlineFloatIcon"
+import BannerSection from "@/components/BannerSection"
 
 const pacifico = Pacifico({
 	weight: ["400"],
@@ -27,6 +28,7 @@ function Page() {
 			<HeroSection />
 			<HotlineFloatIcon />
 			<main>
+				<BannerSection />
 				<section className="section bg-[#566332] overflow-clip">
 					<div id="menu" className="container p-0">
 						<h1 className="menu-heading pb-8 text-center text-6xl text-white font-black pt-10">
