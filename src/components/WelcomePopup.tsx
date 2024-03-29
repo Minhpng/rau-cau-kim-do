@@ -4,6 +4,13 @@ import { Dialog, DialogClose, DialogContent } from "./ui/dialog"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./ui/button"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, Pagination } from "swiper/modules"
+
+const popupSlides = {
+	name: "Freeship 0 dong",
+	imageUrl: "/images/popup-freeship.png",
+}
 
 function WelcomePopup() {
 	const [isOpen, setIsOpen] = useState(true)
@@ -25,12 +32,13 @@ function WelcomePopup() {
 				className="p-0 bg-transparent border-0 max-w-[700px]"
 				onOpenAutoFocus={(e) => e.preventDefault()}
 			>
-				<div className="w-full max-w-[700px] overflow-hidden rounded-3xl">
+				<div className="w-full max-w-[700px] p-3">
 					<Image
-						src="/images/popup-freeship.png"
-						alt="gio vang giam gia soc"
-						width={700}
-						height={700}
+						className="rounded-3xl overflow-hidden"
+						src={popupSlides.imageUrl}
+						alt={popupSlides.name}
+						width={1080}
+						height={1080}
 					/>
 				</div>
 				<DialogClose className="text-xl">

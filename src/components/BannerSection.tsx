@@ -34,8 +34,6 @@ function BannerSection({}) {
 							684: { slidesPerView: 2 },
 						}}
 						autoplay={{ delay: 5000 }}
-						onSlideChange={() => console.log("slide change")}
-						onSwiper={(swiper) => console.log(swiper)}
 						modules={[Autoplay, Pagination]}
 					>
 						{bannerList.map((item, id) => (
