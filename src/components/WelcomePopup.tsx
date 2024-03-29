@@ -25,9 +25,9 @@ function WelcomePopup() {
 				className="p-0 bg-transparent border-0 max-w-[700px]"
 				onOpenAutoFocus={(e) => e.preventDefault()}
 			>
-				<div className="w-full max-w-[700px]">
+				<div className="w-full max-w-[700px] overflow-hidden rounded-3xl">
 					<Image
-						src="/images/popup-gio-vang.png"
+						src="/images/popup-freeship.png"
 						alt="gio vang giam gia soc"
 						width={700}
 						height={700}

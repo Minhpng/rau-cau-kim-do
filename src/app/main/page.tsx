@@ -36,7 +36,7 @@ function Page() {
 						</h1>
 						<div className="w-full max-w-[900px] mx-auto mb-16">
 							<Image
-								src="/images/menu-1.png"
+								src="/images/menu-1.webp"
 								alt="rau cau kim do menu"
 								className="w-full"
 								width={1000}

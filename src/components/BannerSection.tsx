@@ -26,13 +26,12 @@ function BannerSection({}) {
 				<div className="flex gap-3 items-center justify-center">
 					<Swiper
 						spaceBetween={10}
-						slidesPerView={2}
-						breakpoints={{
-							768: { slidesPerView: 2 },
-							0: { slidesPerView: 1 },
-						}}
 						pagination={{
 							clickable: true,
+						}}
+						breakpoints={{
+							0: { slidesPerView: 1 },
+							684: { slidesPerView: 2 },
 						}}
 						autoplay={{ delay: 5000 }}
 						onSlideChange={() => console.log("slide change")}
@@ -41,18 +40,20 @@ function BannerSection({}) {
 					>
 						{bannerList.map((item, id) => (
 							<SwiperSlide key={id}>
-								<div
-									className={cn(
-										"overflow-hidden w-full max-w-[400px] md:max-w-[700px] rounded-2xl mx-auto"
-									)}
-								>
-									<Image
-										src={item.imageUrl}
-										alt={item.name}
-										width={800}
-										height={300}
-									/>
-								</div>
+								<a href="#menu">
+									<div
+										className={cn(
+											"overflow-hidden w-full max-w-[400px] sm:max-w-[700px] rounded-2xl mx-auto"
+										)}
+									>
+										<Image
+											src={item.imageUrl}
+											alt={item.name}
+											width={800}
+											height={300}
+										/>
+									</div>
+								</a>
 							</SwiperSlide>
 						))}
 					</Swiper>
